@@ -1,37 +1,16 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="robots" content="noindex,nofollow" />
-    <link
-      rel="manifest"
-      href="//cdn.authing.co/authing-fe-user-portal/2.29.40/manifest.json"
-    />
+   
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1.0,user-scalable=no"
     />
     
-    <link
-      rel="icon"
-      href="//cdn.authing.co/authing-fe-user-portal/2.29.40/favicon.ico"
-    />
-    
-    <title>登录</title>
-    <link
-      href="//cdn.authing.co/authing-fe-user-portal/2.29.40/static/css/antd.css"
-      rel="stylesheet"
-    />
-
-    <link
-      href="//cdn.authing.co/authing-fe-user-portal/2.29.40/static/css/main.css"
-      rel="stylesheet"
-    />
-    
-    <link
-      href="//cdn.authing.co/authing-fe-user-portal/2.29.40/static/css/react.css"
-      rel="stylesheet"
-    />
+  
      
     <style>
       .authing-user-portal-layout{
@@ -48,60 +27,16 @@
   </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root">
-    <div class="authing-user-portal-layout"
-      style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; top:0; left:0; position: absolute; z-index: 9999">
-      
-        <svg width="100px" height="100px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <style>
-          #path-f {
-            fill: none;
-            stroke: #eaebee;
-            stroke-width: 10;
-            stroke-dasharray: 100 220;
-            animation: dash 40s infinite linear forwards;
-          }
+ <div>
+<p>账号：<input type=text length=200 /></p>
+<p>密码：<input type=password length=200 /></p>
+<p></p>
 
-          #path-b {
-            fill: none;
-            stroke: #0080ff;
-            stroke-width: 8;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-          }
-
-          @keyframes dash {
-            to {
-              stroke-dashoffset: 12000;
-            }
-          }
-        </style>
-        <title>Loading</title>
-        <g id="单独" transform="translate(25.000000, 16.000000)" fill-rule="nonzero" stroke-width="2">
-          <path d="M50,0 L0,30 C0,31 0,32 0,33 C0,69 20,100 50,116 C79,100 100,69 100,33 C100,32 99,31 99,30 L50,0 Z"
-            id="path-b" ></path>
-          <path d="M50,0 L0,30 C0,31 0,32 0,33 C0,69 20,100 50,116 C79,100 100,69 100,33 C100,32 99,31 99,30 L50,0 Z"
-            id="path-f" ></path>
-        </g>
-      </svg>
-        
-    </div>
-  </div>
+</div>
   </body>
+  
+ 
 </html>
 
 
 
-
-
-<script src="https://cdn.authing.co/packages/authing-sso/2.1.2/umd/index.min.js"></script>
-
-<script>
-  var authingSSO = new AuthingSSO.AuthingSSO({
-    appId: '应用 ID',
-    origin: 'https://{用户池域名}.authing.cn',
-    redirectUri: '你的业务软件路由地址',
-  })
-</script>
